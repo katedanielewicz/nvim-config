@@ -1,0 +1,2278 @@
+
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  fg          * <Lua 121: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 127: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 129: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 125: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 123: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 127: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 131: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 125: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 127: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 120: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+x  c           *@<Lua 114: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Check for updates and show the log (git fetch)
+x  gl          *@<Lua 124: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Show recent updates
+x  gb          *@<Lua 116: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+x  i           *@<Lua 121: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Install a plugin
+x  u           *@<Lua 128: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Update a plugin. This will also update the lockfile
+x  x           *@<Lua 111: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Delete a plugin. WARNING: this will delete the plugin even if it should be installed!
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 201: ~\AppData\Local\nvim\init.lua:24>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 142: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 79: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 141: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 111: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 145: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 145: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 147: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 151: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 104: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+x  c           *@<Lua 128: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Check for updates and show the log (git fetch)
+x  gb          *@<Lua 124: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+x  gl          *@<Lua 118: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Show recent updates
+x  i           *@<Lua 110: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Install a plugin
+x  u           *@<Lua 115: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Update a plugin. This will also update the lockfile
+x  x           *@<Lua 121: ~/AppData/Local/nvim-data/lazy/lazy.nvim/lua/lazy/view/float.lua:256>
+                 Delete a plugin. WARNING: this will delete the plugin even if it should be installed!
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 189: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 147: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 144: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 134: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 143: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 147: ~\AppData\Local\nvim\init.lua:22>
+                 Find visual selection
+v  fg          * <Lua 80: ~\AppData\Local\nvim\init.lua:11>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 148: ~\AppData\Local\nvim\init.lua:42>
+                 Find visual selection
+v  fg          * <Lua 147: ~\AppData\Local\nvim\init.lua:31>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 152: ~\AppData\Local\nvim\init.lua:42>
+                 Find visual selection
+v  fg          * <Lua 151: ~\AppData\Local\nvim\init.lua:31>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 144: ~\AppData\Local\nvim\init.lua:47>
+                 Find visual selection
+v  fg          * <Lua 143: ~\AppData\Local\nvim\init.lua:36>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+v  ff          * <Lua 79: ~\AppData\Local\nvim\init.lua:47>
+                 Find visual selection
+v  fg          * <Lua 78: ~\AppData\Local\nvim\init.lua:36>
+                 Grep visual selection
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+v  ff          * <Lua 79: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 78: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+v  ff          * <Lua 79: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 78: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+v  ff          * <Lua 79: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 78: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+v  ff          * <Lua 80: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 79: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 153: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 152: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 136: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 135: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 156: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 155: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 148: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 147: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 150: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 149: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 153: ~\AppData\Local\nvim\init.lua:52>
+                 Find visual selection
+v  fg          * <Lua 152: ~\AppData\Local\nvim\init.lua:41>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 150: ~\AppData\Local\nvim\init.lua:52>
+                 Find visual selection
+v  fg          * <Lua 149: ~\AppData\Local\nvim\init.lua:41>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 151: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 150: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 144: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 143: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 150: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 149: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 140: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 136: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 150: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 149: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 144: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 143: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 106: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 105: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 142: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 141: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 144: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 143: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
+
+s  <Tab>       * <Lua 26: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <Tab>
+x  #           * <Lua 9: vim/_defaults.lua:87>
+                 :help v_#-default
+x  %             <Plug>(MatchitVisualForward)
+x  *           * <Lua 4: vim/_defaults.lua:84>
+                 :help v_star-default
+x  @           * mode() ==# 'V' ? ':normal! @'.getcharstr().'<CR>' : '@'
+                 :help v_@-default
+x  Q           * mode() ==# 'V' ? ':normal! @<C-R>=reg_recorded()<CR><CR>' : 'Q'
+                 :help v_Q-default
+x  [%            <Plug>(MatchitVisualMultiBackward)
+x  ]%            <Plug>(MatchitVisualMultiForward)
+x  a%            <Plug>(MatchitVisualTextObject)
+v  ff          * <Lua 146: ~\AppData\Local\nvim\init.lua:48>
+                 Find visual selection
+v  fg          * <Lua 145: ~\AppData\Local\nvim\init.lua:37>
+                 Grep visual selection
+x  g%            <Plug>(MatchitVisualBackward)
+x  gra         * <Lua 18: vim/_defaults.lua:200>
+                 vim.lsp.buf.code_action()
+x  gc          * <Lua 13: vim/_defaults.lua:172>
+                 Toggle comment
+x  gx          * <Lua 11: vim/_defaults.lua:157>
+                 Opens filepath or URI under cursor with the system handler (file explorer, web browser, …)
+x  <Plug>(MatchitVisualTextObject)   <Plug>(MatchitVisualMultiBackward)o<Plug>(MatchitVisualMultiForward)
+x  <Plug>(MatchitVisualMultiForward) * :<C-U>call matchit#MultiMatch("W",  "n")<CR>m'gv``
+x  <Plug>(MatchitVisualMultiBackward) * :<C-U>call matchit#MultiMatch("bW", "n")<CR>m'gv``
+x  <Plug>(MatchitVisualBackward) * :<C-U>call matchit#Match_wrapper('',0,'v')<CR>m'gv``
+x  <Plug>(MatchitVisualForward) * :<C-U>call matchit#Match_wrapper('',1,'v')<CR>:if col("''") != col("$") | exe ":normal! m'" | endif<CR>gv``
+s  <S-Tab>     * <Lua 28: vim/_defaults.lua:229>
+                 vim.snippet.jump if active, otherwise <S-Tab>
+s  <C-S>       * <Lua 24: vim/_defaults.lua:220>
+                 vim.lsp.buf.signature_help()
