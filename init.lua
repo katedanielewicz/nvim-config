@@ -7,16 +7,35 @@ reg.print_registers(registers)
 ]]--
 
 
-vim.opt.grepprg = "rg --vimgrep --smart-case"
+-- Disable any custom tagfunc filtering
+-- vim.o.tagfunc = ""
 vim.opt.grepformat = "%f:%l:%c:%m"
 
-require("config.lazy")
+
 vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.wrap = true
 vim.o.ignorecase = true
 vim.o.number = true
+require("config.lazy")
 
+
+vim.opt.tags = "./tags;"
+vim.opt.grepprg = "rg --vimgrep --smart-case"
+
+vim.api.nvim_create_user_command('Grepsrc', function(opts)
+  local tb = require('telescope.builtin')
+  tb.live_grep({ search_dirs = {"src"} })
+end, { nargs = "*" })
+
+-- Toggle relative line numbers with <C-s>
+vim.keymap.set("n", "<C-s>", function()
+  if vim.wo.relativenumber then
+    vim.wo.relativenumber = false
+  else
+    vim.wo.relativenumber = true
+  end
+end, { noremap = true, silent = true })
 
 -- Visual mode mapping: "fg" greps the current visual selection
 vim.keymap.set("n", "fg", function()
