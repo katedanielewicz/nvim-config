@@ -12,6 +12,7 @@ reg.print_registers(registers)
 vim.opt.grepformat = "%f:%l:%c:%m"
 
 
+vim.wo.relativenumber = true
 vim.o.tabstop = 4
 vim.o.expandtab = true
 vim.o.wrap = true
@@ -19,6 +20,63 @@ vim.o.ignorecase = true
 vim.o.number = true
 require("config.lazy")
 
+vim.o.guifont = "Departure Mono Nerd Font Propo Regular:h12"
+
+vim.lsp.config['clangd'] = {
+  cmd = {"clangd"},
+  filetypes = {"c", "cpp"},
+
+  root_markers = {
+    ".git",
+    "compile_commands.json",
+    "compile_flags.txt",
+  },
+  settings = {}
+
+}
+
+-- Tab navigation
+vim.api.nvim_set_keymap('n', '<leader>d', ':tabprevious<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>f', ':tabnext<CR>', { noremap = true, silent = true })
+
+-- Tab creation and deletion
+vim.api.nvim_set_keymap('n', '<leader>v', ':tabnew<CR>', { noremap = true, silent = true })   -- new tab
+vim.api.nvim_set_keymap('n', '<leader>c', ':tabclose<CR>', { noremap = true, silent = true }) -- close tab
+vim.lsp.enable('clangd')
+
+-- Define the configuration for pyright
+vim.lsp.config['pyright'] = {
+  cmd = { "pyright-langserver", "--stdio" },
+  filetypes = { "python" },
+  root_markers = {
+    "pyproject.toml",
+    "setup.py",
+    "requirements.txt",
+    ".git",
+  },
+  settings = {
+    python = {
+      analysis = {
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+        typeCheckingMode = "strict",
+        reportUnusedExpression = true,
+      },
+    },
+  },
+}
+
+-- Enable the config
+vim.lsp.enable('pyright')
+
+ -- Show diagnostic popup on hover
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Show line diagnostics" })       
+
+-- Jump to the NEXT error/warning
+vim.keymap.set('n', '<leader>r', vim.diagnostic.goto_next, { desc = "Go to next diagnostic" })
+
+-- Jump to the PREVIOUS error/warning
+vim.keymap.set('n', '<leader>w', vim.diagnostic.goto_prev, { desc = "Go to previous diagnostic" })
 
 vim.opt.tags = "./tags;"
 vim.opt.grepprg = "rg --vimgrep --smart-case"
@@ -75,47 +133,3 @@ end, { noremap = true, silent = true, desc = "Find visual selection" })
 
 
 
--- write n and v mapings after everything else runs
-
-local fname = vim.fn.expand("~/AppData/Local/nvim/nmap.txt")
-
--- temporarily disable more so Neovim won't pause for messages
-vim.cmd("set nomore")
-
--- redirect (use redir! to avoid some warnings), run nmap silently, then end redir
-vim.cmd("redir! >> " .. fname)
-vim.cmd("silent! nmap")
-vim.cmd("redir END")
-
--- restore 'more'
-vim.cmd("set more")
-
-
-
-local fname = vim.fn.expand("~/AppData/Local/nvim/vmap.txt")
-
--- temporarily disable more so Neovim won't pause for messages
-vim.cmd("set nomore")
-
--- redirect (use redir! to avoid some warnings), run vmap silently, then end redir
-vim.cmd("redir! >> " .. fname)
-vim.cmd("silent! vmap")
-vim.cmd("redir END")
-
--- restore 'more'
-vim.cmd("set more")
-
-
-
-local fname = vim.fn.expand("~/AppData/Local/nvim/map.txt")
-
--- temporarily disable more so Neovim won't pause for messages
-vim.cmd("set nomore")
-
--- redirect (use redir! to avoid some warnings), run map silently, then end redir
-vim.cmd("redir! >> " .. fname)
-vim.cmd("silent! map")
-vim.cmd("redir END")
-
--- restore 'more'
-vim.cmd("set more")
