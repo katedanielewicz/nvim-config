@@ -1,21 +1,16 @@
 return {
-  --[[
-  {          
-    "neovim/nvim-lspconfig",
-    config = function()
-        local lspconfig = require("lspconfig")
-
-        -- clangd setup
-        lspconfig.clangd.setup({
-            cmd = { "clangd" },  -- path to clangd if not in PATH
-            filetypes = { "c", "cpp", "objc", "objcpp" },
-            root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
-            capabilities = vim.lsp.protocol.make_client_capabilities(),
-        })
-    end,
-  }, --]]
-
   {
+    
+    {
+      "nvim-treesitter/nvim-treesitter-context",
+      config = function()
+        require("treesitter-context").setup({
+          enable = true,
+          max_lines = 5, -- how many lines of context to show
+          trim_scope = "outer",
+        })
+      end
+    },
     {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -65,6 +60,11 @@ return {
     {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
+    filesystem = {
+      filtered_items = {
+        visible = true,
+      },
+    },
     dependencies = {
     "nvim-lua/plenary.nvim",
     "MunifTanjim/nui.nvim",
