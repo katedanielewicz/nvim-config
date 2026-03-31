@@ -18,31 +18,43 @@ vim.o.expandtab = true
 vim.o.wrap = true
 vim.o.ignorecase = true
 vim.o.number = true
+vim.opt.smartcase = true
 require("config.lazy")
 
 vim.o.guifont = "Departure Mono Nerd Font Propo Regular:h12"
 
-vim.lsp.config['clangd'] = {
-  cmd = {"clangd"},
-  filetypes = {"c", "cpp"},
 
-  root_markers = {
-    ".git",
-    "compile_commands.json",
-    "compile_flags.txt",
-  },
-  settings = {}
+local opts = { noremap = true, silent = true }
 
-}
+
+
+-- Window navigation using <leader> + hjkl
+vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', opts)
+vim.api.nvim_set_keymap('n', '<leader>j', '<C-w>j', opts)
+vim.api.nvim_set_keymap('n', '<leader>k', '<C-w>k', opts)
+vim.api.nvim_set_keymap('n', '<leader>l', '<C-w>l', opts)
 
 -- Tab navigation
 vim.api.nvim_set_keymap('n', '<leader>d', ':tabprevious<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>f', ':tabnext<CR>', { noremap = true, silent = true })
 
+-- Tab Movement
+vim.api.nvim_set_keymap('n', '<leader><<', ':-tabmove<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>>>', ':+tabmove<CR>', opts)
+
 -- Tab creation and deletion
 vim.api.nvim_set_keymap('n', '<leader>v', ':tabnew<CR>', { noremap = true, silent = true })   -- new tab
 vim.api.nvim_set_keymap('n', '<leader>c', ':tabclose<CR>', { noremap = true, silent = true }) -- close tab
-vim.lsp.enable('clangd')
+
+
+vim.api.nvim_set_keymap(
+  'n',
+  '<leader>yr',
+  ':execute "let @" . v:register . " = expand(\'%\')" <CR>',
+  opts
+)
+
+
 
 -- Define the configuration for pyright
 vim.lsp.config['pyright'] = {
@@ -59,7 +71,6 @@ vim.lsp.config['pyright'] = {
       analysis = {
         autoSearchPaths = true,
         useLibraryCodeForTypes = true,
-        typeCheckingMode = "strict",
         reportUnusedExpression = true,
       },
     },
@@ -68,6 +79,8 @@ vim.lsp.config['pyright'] = {
 
 -- Enable the config
 vim.lsp.enable('pyright')
+
+vim.keymap.set('n', '<leader>tg', vim.lsp.buf.definition, {})
 
  -- Show diagnostic popup on hover
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = "Show line diagnostics" })       
@@ -96,15 +109,15 @@ vim.keymap.set("n", "<C-s>", function()
 end, { noremap = true, silent = true })
 
 -- Visual mode mapping: "fg" greps the current visual selection
-vim.keymap.set("n", "fg", function()
+vim.keymap.set("n", "<leader>gh", function()
 
-  require("telescope.builtin").grep_string({ })
+  require("telescope.builtin").grep_string({""})
 
 end, { noremap = true, silent = true, desc = "Grep normal selection" })
 
 
 
-vim.keymap.set("n", "ff", function()
+vim.keymap.set("n", "<leader>gg", function()
 
   require("telescope.builtin").find_files({ })
 
