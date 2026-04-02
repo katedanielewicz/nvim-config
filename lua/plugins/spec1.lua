@@ -110,7 +110,12 @@ return {
       vim.cmd([[colorscheme pasteldark]])
     end,
   },
-  
+  { 
+    "folke/tokyonight.nvim",
+    lazy = false, -- Load on startup
+    priority = 1000, -- Load before other plugins
+  },
+
   {
     "Scysta/pink-panic.nvim",
     lazy = false, -- Load on startup
@@ -118,9 +123,6 @@ return {
     dependencies = {
       "rktjmp/lush.nvim",
     },
-    config = function()
-     -- vim.cmd([[colorscheme pink-panic]])
-    end,
   },
   -- 6. Utilities & UI
   { "folke/which-key.nvim", lazy = true },

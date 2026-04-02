@@ -11,7 +11,6 @@ reg.print_registers(registers)
 -- vim.o.tagfunc = ""
 vim.opt.grepformat = "%f:%l:%c:%m"
 
-
 vim.wo.relativenumber = true
 vim.o.tabstop = 4
 vim.o.expandtab = true
@@ -26,7 +25,24 @@ vim.o.guifont = "Departure Mono Nerd Font Propo Regular:h12"
 
 local opts = { noremap = true, silent = true }
 
+local themes = {
+  "pasteldark", "tokyonight-night", "pastelnight", 
+  "pastelwarm", "tokyonight-storm", "",
+  "", "tokyonight-day", "pink-panic"
+}
 
+local function set_theme(idx)
+  if themes[idx] then
+    vim.cmd("colorscheme " .. themes[idx])
+    print("Theme set to: " .. themes[idx])
+  end
+end
+
+for i = 1, 9 do
+  vim.keymap.set('n', '<leader>' .. i , function()
+    set_theme(i)
+  end, { desc = "Set theme to " .. (themes[i] or i) })
+end
 
 -- Window navigation using <leader> + hjkl
 vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', opts)
@@ -109,7 +125,7 @@ vim.keymap.set("n", "<C-s>", function()
 end, { noremap = true, silent = true })
 
 -- Visual mode mapping: "fg" greps the current visual selection
-vim.keymap.set("n", "<leader>gh", function()
+vim.keymap.set("n", "<leader>ag", function()
 
   require("telescope.builtin").grep_string({""})
 
@@ -117,14 +133,14 @@ end, { noremap = true, silent = true, desc = "Grep normal selection" })
 
 
 
-vim.keymap.set("n", "<leader>gg", function()
+vim.keymap.set("n", "<leader>af", function()
 
   require("telescope.builtin").find_files({ })
 
 end, { noremap = true, silent = true, desc = "Find normal selection" })
 
 -- Visual mode mapping: "fg" greps the current visual selection
-vim.keymap.set("v", "fg", function()
+vim.keymap.set("v", "<leader>fg", function()
   -- Get the selected text
   vim.cmd('normal! "zy')
   local selection = vim.fn.getreg("z")
@@ -135,7 +151,7 @@ end, { noremap = true, silent = true, desc = "Grep visual selection" })
 
 
 
-vim.keymap.set("v", "ff", function()
+vim.keymap.set("v", "<leader>ff", function()
   -- Get the selected text
   vim.cmd('normal! "zy')
   local selection = vim.fn.getreg("z")
