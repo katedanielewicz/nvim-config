@@ -96,6 +96,34 @@ vim.lsp.config['pyright'] = {
 -- Enable the config
 vim.lsp.enable('pyright')
 
+-- Create a namespace for your semi-permanent marks
+local vesc_ns = vim.api.nvim_create_namespace('vesc_highlights')
+
+-- Function to highlight the current visual selection
+function Highlight_Block()
+    local _, s_line, _, _ = unpack(vim.fn.getpos("'<"))
+    local _, e_line, _, _ = unpack(vim.fn.getpos("'>"))
+    
+    -- Iterate through the selected lines
+    for i = s_line - 1, e_line - 1 do
+        vim.api.nvim_buf_set_extmark(0, vesc_ns, i, 0, {
+            line_hl_group = 'DiffAdd', -- Uses your theme's visual selection color
+            -- You can also use 'DiffAdd' (green) or 'DiffDelete' (red)
+        })
+    end
+end
+
+-- Function to clear all custom highlights
+function Clear_Highlights()
+    vim.api.nvim_buf_clear_namespace(0, vesc_ns, 0, -1)
+end
+
+-- Mappings
+vim.keymap.set('v', '<leader>n', ':lua Highlight_Block()<CR>', { silent = true })
+vim.keymap.set('n', '<leader>N', ':lua Clear_Highlights()<CR>', { silent = true })
+
+
+
 vim.keymap.set('n', '<leader>tg', vim.lsp.buf.definition, {})
 
  -- Show diagnostic popup on hover
@@ -140,7 +168,7 @@ vim.keymap.set("n", "<leader>af", function()
 end, { noremap = true, silent = true, desc = "Find normal selection" })
 
 -- Visual mode mapping: "fg" greps the current visual selection
-vim.keymap.set("v", "<leader>fg", function()
+vim.keymap.set("v", "<leader>ag", function()
   -- Get the selected text
   vim.cmd('normal! "zy')
   local selection = vim.fn.getreg("z")
@@ -151,7 +179,7 @@ end, { noremap = true, silent = true, desc = "Grep visual selection" })
 
 
 
-vim.keymap.set("v", "<leader>ff", function()
+vim.keymap.set("v", "<leader>af", function()
   -- Get the selected text
   vim.cmd('normal! "zy')
   local selection = vim.fn.getreg("z")

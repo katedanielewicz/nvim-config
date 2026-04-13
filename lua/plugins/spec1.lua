@@ -191,6 +191,7 @@ return {
           -- This handles your request for case-insensitivity
           -- If you type 'ft', it will find 't' and 'T'
           smart_case = true,
+          equivalent_chars = nil,
         }
       })
     end,
