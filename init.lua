@@ -21,9 +21,37 @@ vim.opt.smartcase = true
 require("config.lazy")
 require("abbrs")
 
+-- Move cursor with Alt + hjkl
+-- Using 'g' prefix ensures movement follows wrapped lines (visual lines)
+vim.keymap.set("i", "<A-h>", "<Left>")
+vim.keymap.set("i", "<A-j>", "<C-o>gj")
+vim.keymap.set("i", "<A-k>", "<C-o>gk")
+vim.keymap.set("i", "<A-l>", "<Right>")
+
+
 vim.o.guifont = "Departure Mono Nerd Font Propo Regular:h12"
 
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "markdown", "text" },
+  callback = function()
+    -- 1. Turn off hard wrapping (no auto-inserting new lines)
+    vim.opt_local.textwidth = 0
+    vim.opt_local.wrapmargin = 0
 
+    -- 2. Enable visual wrapping
+    vim.opt_local.wrap = true
+
+    -- 3. Break lines at words, not in the middle of a word
+    vim.opt_local.linebreak = true
+
+    -- 4. Don't break lines inside a paragraph when editing midline
+    -- 'l' ensures long lines are not broken in insert mode
+    vim.opt_local.formatoptions:remove("t")
+    
+    -- 5. Keep indentation for wrapped lines (makes it look cleaner)
+    vim.opt_local.breakindent = true
+  end,
+})
 
 local themes = {
   "pasteldark", "tokyonight-night", "pastelnight", 

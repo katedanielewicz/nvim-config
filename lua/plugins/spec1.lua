@@ -1,3 +1,4 @@
+
 return {
   -- 1. Treesitter Context
   {
@@ -23,6 +24,15 @@ return {
       local capabilities = vim.lsp.protocol.make_client_capabilities()
       local lspconfig = require("lspconfig")
 
+      -- Enable Native Vim Spelling for specific files
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = { "markdown", "text", "gitcommit", "norg" },
+        callback = function()
+          vim.opt_local.spell = true
+          vim.opt_local.spelllang = "en_us"
+        end,
+      })
+
       require("mason-lspconfig").setup({
         ensure_installed = { "pyright", "clangd", "ltex" },
         handlers = {
@@ -36,7 +46,13 @@ return {
               capabilities = capabilities,
               filetypes = { "markdown", "text", "gitcommit", "norg", "mail" },
               settings = {
-                ltex = { language = "en-US" }
+                ltex = {
+                  language = "en-US",
+                  -- This allows LTeX to store "add to dictionary" words in a file
+                  dictionary = {
+                    ["en-US"] = { "neovim", "LSP" } 
+                  },
+                }
               }
             })
           end,
@@ -51,7 +67,15 @@ return {
           vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
           vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
           vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
+          
+          -- IMPORTANT: Use <leader>ca to see LTeX spelling suggestions
           vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
+          
+          -- Standard Vim Spell Jump keys
+          -- [s : Previous misspelled word
+          -- ]s : Next misspelled word
+          -- z= : Suggest corrections for word under cursor
+          -- zg : Add word to dictionary
         end,
       })
     end,
@@ -89,6 +113,8 @@ return {
           file_ignore_patterns = { "tags", "node_modules", ".git" },
         },
       })
+      -- Add Telescope spell suggest binding
+      vim.keymap.set('n', '<leader>ss', require('telescope.builtin').spell_suggest, { desc = "Spelling Suggestions" })
     end
   },
 
@@ -106,6 +132,7 @@ return {
   { "Wansmer/treesj", keys = { { "J", "<cmd>TSJToggle<cr>", desc = "Join Toggle" } }, opts = { use_default_keymaps = false, max_join_length = 150 } },
   { "monaqa/dial.nvim", keys = { "<C-a>", { "<C-x>", mode = "n" } } },
   { "tpope/vim-repeat" },
+  -- Abolish is great for fixing common typos automatically
   { "tpope/vim-abolish", event = "BufReadPost" },
 
   -- 8. Leap & Flit
