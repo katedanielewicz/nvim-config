@@ -19,11 +19,11 @@ vim.o.ignorecase = true
 vim.o.number = true
 vim.opt.smartcase = true
 require("config.lazy")
+require("abbrs")
 
 vim.o.guifont = "Departure Mono Nerd Font Propo Regular:h12"
 
 
-local opts = { noremap = true, silent = true }
 
 local themes = {
   "pasteldark", "tokyonight-night", "pastelnight", 
@@ -43,6 +43,8 @@ for i = 1, 9 do
     set_theme(i)
   end, { desc = "Set theme to " .. (themes[i] or i) })
 end
+
+opts = { noremap = true, silent = true }
 
 -- Window navigation using <leader> + hjkl
 vim.api.nvim_set_keymap('n', '<leader>h', '<C-w>h', opts)
